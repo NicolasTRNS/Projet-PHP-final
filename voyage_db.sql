@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : lun. 25 mars 2024 à 09:34
+-- Généré le : mar. 09 avr. 2024 à 06:14
 -- Version du serveur : 8.0.30
 -- Version de PHP : 8.1.10
 
@@ -41,7 +41,7 @@ CREATE TABLE `commentaires` (
 --
 
 INSERT INTO `commentaires` (`id`, `publication_id`, `commentaire`, `date_commentaire`, `date_publication`, `voyage_id`) VALUES
-(3, NULL, 'test', '2024-03-25 09:34:09', '2024-03-25 09:34:09', 16);
+(4, NULL, 'testtest', '2024-03-25 09:38:38', '2024-03-25 09:38:38', 18);
 
 -- --------------------------------------------------------
 
@@ -148,7 +148,7 @@ ALTER TABLE `voyages`
 -- AUTO_INCREMENT pour la table `commentaires`
 --
 ALTER TABLE `commentaires`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT pour la table `publications`
@@ -172,7 +172,7 @@ ALTER TABLE `utilisateurs`
 -- AUTO_INCREMENT pour la table `voyages`
 --
 ALTER TABLE `voyages`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- Contraintes pour les tables déchargées
