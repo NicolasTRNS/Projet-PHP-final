@@ -5,7 +5,6 @@ Comment l'installer en local ?
 Aller sur https://github.com/NicolasTRNS/Projet-PHP-final puis dans "Code" et "Download Zip" ensuite il faut improter la base de données
 ensuite lancer index.php.
 
-
 Comment l'installer en ligne ?
 
 Simplement cliquer sur ce lien : http://explorenet.store/login.php
@@ -13,3 +12,7 @@ Simplement cliquer sur ce lien : http://explorenet.store/login.php
 Vous pouvez trouver les identifiants sur identifiants.txt :
 Compte utilisateur : 123456
 Mot de passe : R#7vFt*9@p!
+
+Une fois sur le site et que l'on est connecté à son compte, nous pouvons créer des voyages. Pour se faire, il faut aller dans la partie
+"Destination" puis créer le voyage que l'on souhaite, le nom d'une ville par exemple. Ensuite, on peut ajouter une date de départ.
+Cliquer sur "Date de départ" Pour confirmer la création du voyage, il faut faire 
