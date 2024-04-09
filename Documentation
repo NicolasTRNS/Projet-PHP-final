@@ -1,5 +1,6 @@
 Site Web PHP SocialNet
 
+
 Comment l'installer en local ? 
 
 Aller sur https://github.com/NicolasTRNS/Projet-PHP-final puis dans "Code" et "Download Zip" ensuite il faut improter la base de données
@@ -20,7 +21,47 @@ Une fois le voyage crée, on a la possibilité de soit y ajouter des commentaire
 On peut soit ajouter des commentaires à côté du voyage, soit en bas de la page principale. On peut également sélectionner le voyage auquel on peut
 ajouter des commentaires, permettant aux utilisateurs de pouvoir avoir un "pré-avis" sur le voyage en question.
 
+
 Schémas :
 
 Diagramme de classe :
 
++-----------------------------------+
+|              Utilisateur           |
++-----------------------------------+
+| id: int                           |
+| username: string                  |
+| password: string                  |
++-----------------------------------+
+                  |
+                  |
+                  V
++-----------------------------------+
+|              Voyage               |
++-----------------------------------+
+| id: int                           |
+| destination: string               |
+| date_depart: date                 |
+| createur_id: int                  |
++-----------------------------------+
+                  |
+                  |
+                  V
++-----------------------------------+
+|           Commentaire             |
++-----------------------------------+
+| id: int                           |
+| voyage_id: int                    |
+| commentaire: text                 |
+| date_publication: timestamp       |
++-----------------------------------+
+
+Diagramme de séquence : Utilisateur --> Formulaire: Remplit les détails du voyage
+Formulaire --> JavaScript: Validation des champs (destination, date_depart)
+JavaScript --> Formulaire: Retourne vrai si valide
+
+Formulaire --> PHP (insert_voyage.php): Soumet les données
+PHP (insert_voyage.php) --> Base de données: Insère le nouveau voyage
+
+Base de données --> PHP (insert_voyage.php): Réponse de l'insertion
+PHP (insert_voyage.php) --> Utilisateur: Affiche un message de succès ou d'erreur
