@@ -1,9 +1,14 @@
 Site Web PHP SocialNet
 
-Comment l'installer ? 
+Comment l'installer en local ? 
 
 Aller sur https://github.com/NicolasTRNS/Projet-PHP-final puis dans "Code" et "Download Zip" ensuite il faut improter la base de données
 ensuite lancer index.php.
+
+
+Comment l'installer en ligne ?
+
+Simplement cliquer sur ce lien : http://explorenet.store/login.php
 
 Vous pouvez trouver les identifiants sur identifiants.txt :
 Compte utilisateur : 123456
